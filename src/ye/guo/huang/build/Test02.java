@@ -33,6 +33,15 @@ public class Test02 extends Thread{
 		return s ;
 	} 
 	
+	public static int productNumPub() {
+		int max=1000;
+		int min=100;
+		Random random = new Random();
+		int s = random.nextInt(max)%(max-min+1) + min;
+//		System.out.println("s="+s);
+		return s ;
+	} 
+	
 	
 	public static void main(String[] args) {
 		Test02 t1 = new Test02();
